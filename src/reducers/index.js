@@ -1,11 +1,3 @@
-// import { combineReducers} from 'redux';
-// import rootReducer from './articleReducer';
-// import reducers from './newsReducer';
-
-// export default combineReducers({
-//     rootReducer, reducers
-//   })
-
 import * as types from '../actions/newsActions';
 
 const initialState = {

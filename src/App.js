@@ -5,7 +5,6 @@ import {Header} from './components/Header'
 import Footer from './components/Footer'
 import Login from './components/Login'
 import Register from './components/Register'
-import logo from './newspaper.svg'
 import './App.scss';
 
 class App extends Component {

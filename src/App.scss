@@ -26,6 +26,8 @@ $dark-color: rgb(53, 50, 50);
 $light-color: #77a39a;
 $matchy: rgba(212, 198, 198, 0.9);
 $brown: rgb(97, 92, 92);
+$bright-yarrow: #fdcb6e;
+$dupain: #60a3bc;
 
 * {
   font-family: $main-font;
@@ -94,13 +96,13 @@ form h4 {
 .logout-btn, .login-btn, .signup-btn {
   border: 1px solid #666;
   padding: 7px 10px;
-  background-color: $swan-white;
-  opacity: 0.7;
+  background-color: rgb(48, 47, 47);
+  opacity: 0.9;
   border-radius: 3px;
+  color: $swan-white;
 
   &:hover {
-    background-color: $ships-officer;
-    color: $swan-white;
+    background-color: $swan-white;
     cursor: pointer;
   }
 }
@@ -136,10 +138,16 @@ form input {
 
 li.logo {
   float: left;
-  color: $dark-color;
+  color: #2e5858f5;
+  // text-shadow: 1px 1px 1px rgb(97, 92, 92);
   padding: 6px 6px;
   margin-left: 12px;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  background-color: rgba(233, 231, 231, 0.945);
+  width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 12px;;
 }
 
 .article-card{
@@ -170,11 +178,11 @@ header {
   background: $light-color;
   color: $swan-white;
   padding: 20px 0;
-  height: 120px;
+  height: 200px;
   position: block;
   width: 100%;
   opacity: 0.9;
-  background: url('shape.jpg') no-repeat;
+  background: url('color-shapes.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -210,15 +218,6 @@ div.row.no-gutters {
   margin-top: -620px;
 }
 
-footer {
-  background: $brown;
-  padding: 20px;
-  color: #fff;
-  justify-content: center;
-}
-
-
-
 
 /////
 
@@ -234,19 +233,13 @@ footer {
 
 .container .firstColumn {
   padding: 30px 20px 20px 40px;
-  background-color:$light-color;
+  background-color: $bright-yarrow;
   position: relative;
 }
 
 .container .secondColumn {
   padding: 40px 20px 40px 20px;
-  background-color: $background-color;
-}
-
-.logo {
-  width: 30px;
-  height: auto;
-  display: block;
+  background-color: $swan-white;
 }
 
 .title {
@@ -257,16 +250,20 @@ footer {
 .link {
   display: block;
   text-decoration: none;
-  color: $dark-color;
+  color: $ships-officer;
   margin-bottom: 12px;
   font-size: 1.2rem;
-  padding: 6px;
+  padding: 6px 4px;
+  padding-left: 10px;
+  width: 100%
 }
 
 .link:hover {
-  color: $matchy;
+  color: $ships-officer;
   padding: 5px;
-  background-color: $devil-blue;
+  padding-left: 10px;
+  background-color: $swan-white;
+  border-radius: 8px;
 }
 
 .credits {
@@ -334,4 +331,11 @@ footer {
 
 .footer {
   text-align: center;
+}
+
+footer {
+  background: #288383c5;
+  padding: 20px;
+  color: #fff;
+  justify-content: center;
 }

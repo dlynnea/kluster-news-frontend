@@ -5,7 +5,7 @@ import Headlines from './Headlines';
 import About from './About';
 import Podcasts from './Podcasts';
 import Weather from './Weather';
-// import Articles from '../containers/Articles';
+import Articles from '../containers/Articles';
 
 const Main = () => (
   <main>

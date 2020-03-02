@@ -1,49 +1,50 @@
-import React, {Component} from 'react';
-import { connect } from 'react-redux';
-import fetchArticles from "../actions/fetchArticles";
-import {getArticles, getArticlesPending, getArticlesError } from "../reducers/index";
-import {bindActionCreators} from "redux";
+import React, { useState, useEffect } from 'react';
+// import { connect } from 'react-redux';
+// import fetchArticles from "../actions/fetchArticles";
+// import {getArticles, getArticlesPending, getArticlesError } from "../reducers/index";
+// import {bindActionCreators} from "redux";
 import ArticleCard from './ArticleCard'
+import Axios from 'axios';
 
-class Articles extends Component {
-  constructor(props) {
-    super(props);
+const Articles = () => {
 
-    this.state = {
+    const [articles, setArticles] = useState([])
 
-    }
-  }
-  
-  componentDidMount() {
-    this.fetchArticles()
-  }
+    useEffect(() => {
+        const fetchArticles = async() => {
+            const res = await Axios.get('http://localhost:3000/articles')
+            setArticles(res.data)
+        }
+        fetchArticles();
+    }, []);
 
-  render() {
     return (  
-      <div>
-        {this.props.articles.items.map((article) => (
+        <div>
+        {/* {console.log(articles)}
+        {this.state.articles.map((article) => (
             <div className='col-lg-4 p-4' key={article.id}>
-                <ArticleCard article={article}/>
+                <ArticleCard articles={state.articles}/>
             </div>
-        ))}
+        ))} */}
         </div>
-        )
-    }}
+    )
+}
 
+// const mapStateToProps = (state) => {
+//     return{
+//     //   error: getArticlesError(state),
+//     //   pending: getArticlesPending(state),
+//       articles: getArticles(state)
 
-const mapStateToProps = (state) => {
-    return{
-    //   error: getArticlesError(state),
-    //   pending: getArticlesPending(state),
-      articles: getArticles(state)
+//     }
+//   }
 
-    }
-  }
+// const mapDispatchToProps = dispatch => bindActionCreators({
+//     fetchArticles
+// },dispatch);
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-    fetchArticles
-},dispatch);
+// const articleView = connect(mapStateToProps, mapDispatchToProps)(Articles);
 
-const articleView = connect(mapStateToProps, mapDispatchToProps)(Articles);
+// export default connect(mapStateToProps, mapDispatchToProps)(articleView);
 
-export default connect(mapStateToProps, mapDispatchToProps)(articleView);
+export default Articles;
