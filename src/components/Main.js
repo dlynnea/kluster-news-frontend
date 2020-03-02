@@ -6,6 +6,7 @@ import About from './About';
 import Podcasts from './Podcasts';
 import Weather from './Weather';
 import Articles from '../containers/Articles';
+import Unsplash from '../containers/Unsplash';
 
 const Main = () => (
   <main>
@@ -15,6 +16,7 @@ const Main = () => (
       <Route path='/about' component={About} />
       <Route path='/podcasts' component={Podcasts} />
       <Route path='/weather' component={Weather} />
+      <Route path='/unsplash' component={Unsplash} />
       {/* <Route path='/articles' component={Articles} /> */}
     </Switch>
   </main>
