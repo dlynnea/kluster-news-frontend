@@ -40,13 +40,14 @@ class App extends Component {
   }
 
   handleSignup = (event, data) => {
+    const user = { ...data }
     event.preventDefault();
     fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify({ user })
     })
     .then(response => response.json())
     .then(json => {

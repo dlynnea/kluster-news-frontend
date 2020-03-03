@@ -2,7 +2,7 @@ import {
     GET_ARTICLES_SUCCESS,
     GET_ARTICLES_ERROR,
     GET_ARTICLES_PENDING,
-  } from "../actions/articleActions";
+  } from "./articleActions";
 
 const initialState = {
     articles: {
