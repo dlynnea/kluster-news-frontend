@@ -8,6 +8,7 @@ import Weather from './Weather';
 import Quanta from '../containers/Quanta';
 import Verge from '../containers/Verge';
 import Unsplash from '../containers/Unsplash';
+import Mbg from '../containers/Mbg';
 import Login from './Login';
 import Register from './Register';
 
@@ -24,6 +25,7 @@ const Main = () => (
       <Route path='/unsplash' component={Unsplash} />
       <Route path='/articles' component={Quanta} />
       <Route path='/verge' component={Verge} />
+      <Route path='/mbg' component={Mbg} />
     </Switch>
   </main>
 )

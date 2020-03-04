@@ -110,6 +110,7 @@ class App extends Component {
               <Link className='link' to="/unsplash">art</Link>
               <Link className='link' to="/articles">science</Link>
               <Link className='link' to="/verge">tech</Link>
+              <Link className='link' to="/mbg">wellness</Link>
               <h3 className='divider'>other</h3>
               <Link className='link' to="/podcasts">podcasts</Link>
               <Link className='link' to="/weather">weather</Link>
