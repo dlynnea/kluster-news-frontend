@@ -44,7 +44,7 @@ class Register extends Component {
 
     render() {
         return(
-            <form onSubmit={event => this.handleSignup(event, this.state)}>
+            <form onSubmit={event => this.handleSignup()}>
             <h4>SIGN UP</h4>
             <input
             type="text"
@@ -76,6 +76,6 @@ class Register extends Component {
 
 export default Register;
 
-Register.propTypes = {
-    handleSignup: PropTypes.func.isRequired
-}
+// Register.propTypes = {
+//     handleSignup: PropTypes.func.isRequired
+// }

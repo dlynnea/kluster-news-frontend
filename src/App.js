@@ -5,6 +5,7 @@ import {Header} from './components/Header'
 import Footer from './components/Footer'
 import Login from './components/Login'
 import Register from './components/Register'
+import moment from 'moment';
 import './App.scss';
 
 class App extends Component {
@@ -13,11 +14,16 @@ class App extends Component {
     logged_in: false,
     username: '',
     displayed_form: '',
+    today: [],
   }
 
-  // displayForm = form => {
-  //   this.setState({ displayed_form: form })
-  // }
+  displayForm = form => {
+    this.setState({ displayed_form: form })
+  }
+
+  todaysDate(){
+    return moment(this.state.today.date).format('MMMM DD, YYYY')
+}
 
   // handleLogin = (event, data) => {
   //   event.preventDefault();
@@ -91,24 +97,22 @@ class App extends Component {
             <div className='firstColumn'>
               {form}
               {/* <img className='logo' src={logo} alt="Clustr" /> */}
-              <h1 className='title'>menú</h1>
-              <Link className='link' to={{
-                pathname: "/login",
-
-              }} >login</Link>
+              {/* <h1 className='title'>menú</h1> */}
+              <p className='date'>Todays Date: {this.todaysDate()} </p>
+              <Link className='link' to="/login">login</Link>
               <Link className='link' to="/users">sign up</Link>
               <h3 className='divider'></h3>
               <Link className='link' to="/">home</Link>
               <Link className='link' to="/">profile</Link>
               <h3 className='divider'>feed</h3>
               <Link className='link' to="/">your news</Link>
-              <Link className='link' to="/headlines">top headlines</Link>
+              <Link className='link' to="/headlines">mainstream</Link>
               <Link className='link' to="/unsplash">art</Link>
-              {/* <Link className='link' to="/articles">Quanta</Link> */}
+              <Link className='link' to="/articles">science</Link>
               <h3 className='divider'>other</h3>
-              <Link className='link' to="/about">about curator</Link>
               <Link className='link' to="/podcasts">podcasts</Link>
               <Link className='link' to="/weather">weather</Link>
+              <Link className='link' to="/about">about curator</Link>
             </div>
             <div className='secondColumn'>
               <Main />
