@@ -102,7 +102,8 @@ form h4 {
   color: $swan-white;
 
   &:hover {
-    background-color: $swan-white;
+    // color: $swan-white;
+    // background-color: #ad9862;
     color: $ships-officer;
     cursor: pointer;
   }
@@ -140,7 +141,6 @@ form input {
 li.logo {
   float: left;
   color: #2e5858f5;
-  // text-shadow: 1px 1px 1px rgb(97, 92, 92);
   padding: 6px 6px;
   margin-left: 12px;
   font-size: 2.8rem;
@@ -183,7 +183,7 @@ header {
   position: block;
   width: 100%;
   opacity: 0.9;
-  background: url('color-shapes.jpg') no-repeat;
+  background: url('color-shapes3.jpg') no-repeat;
   background-size: cover;
   background-attachment: static;
 }
@@ -219,7 +219,7 @@ div.row.no-gutters {
   margin-top: -620px;
 }
 
-
+// menu
 /////
 
 .container {
@@ -260,10 +260,10 @@ div.row.no-gutters {
 }
 
 .link:hover {
-  color: $ships-officer;
   padding: 5px;
+  color: rgb(36, 34, 34);
   padding-left: 10px;
-  background-color: $swan-white;
+  font-weight: 1000;
   border-radius: 8px;
 }
 
@@ -276,6 +276,10 @@ div.row.no-gutters {
 }
 
 .divider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
   font-size: 1.4rem;
 }
 
@@ -342,15 +346,6 @@ footer {
 }
 
 // Unsplash styling
-
-
-// body {
-//   margin: 0;
-//   background-color: #f5f6f7;
-//   display: flex;
-//   justify-content: center;
-//   padding: 20px 0;
-// }
 
 #mount-point {
   width: 100%;
@@ -448,7 +443,7 @@ footer {
 .pagination span {
   display: block;
   text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
+  // font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 42px;
   height: 44px;

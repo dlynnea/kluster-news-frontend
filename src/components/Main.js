@@ -7,11 +7,15 @@ import Podcasts from './Podcasts';
 import Weather from './Weather';
 import Articles from '../containers/Articles';
 import Unsplash from '../containers/Unsplash';
+import Login from './Login';
+import Register from './Register';
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Feed} />
+      <Route exact path='/login' component={Login} />
+      <Route exact path='/users' component={Register} />
       <Route exact path='/headlines' component={Headlines} />
       <Route path='/about' component={About} />
       <Route path='/podcasts' component={Podcasts} />
