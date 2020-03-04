@@ -1,10 +1,9 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, { Component } from 'react';
 // import { connect } from 'react-redux';
 // import fetchArticles from "../actions/fetchArticles";
 // import {getArticles, getArticlesPending, getArticlesError } from "../reducers/index";
 // import {bindActionCreators} from "redux";
 import ArticleCard from './ArticleCard'
-import axios from 'axios';
 
 class Quanta extends Component {
 
@@ -21,14 +20,13 @@ class Quanta extends Component {
     }
 
     render() {
-        console.log("articles", this.state.articles)
         const { articles } = this.state;
         const { article, handleArticleUpdate } = this.props;
 
         return (  
             <div>
-                <h1>from Quanta Magazine &hearts;</h1>
-            {/* <select 
+                <h1>from Quanta Magazine</h1>
+            <select 
               className='inputField'
               onChange={(e) => {
                 e.preventDefault();
@@ -37,14 +35,15 @@ class Quanta extends Component {
                 handleArticleUpdate(articleId, e.target.value)
               }
             }>
-              <option>Meow</option>
-              {articles.map((article, i) => (<option key={i} data-ids={article.id}>{article.title}</option>))}
-            </select> */}
-             {/* {
-              (article.name) ?
-                (<h2 className='subtitle'>Headlines from <strong>{article.author}</strong>.</h2>)
-                : (<p></p>)
-            } */}
+            <option>Select...</option>
+                {
+                articles.map((article, i) => 
+                    (<option key={i} data-ids={article.id}>{article.title}</option>))}
+            </select>
+                {/* {
+                articles.map(article => (
+                    (article.title) ? (<h2 className='subtitle'><strong>{article.author}</strong></h2>) : (<p></p>)
+                ))} */}
             {
               articles.map((article, i) => (
                 <ArticleCard 

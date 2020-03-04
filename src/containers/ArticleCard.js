@@ -3,22 +3,21 @@ import React from 'react';
 // import Article from './Article';
 
 const ArticleCard = (props) => {
-    console.log(props)
     const { url, title, author } = props;
 
     return (
         <>
-        <a 
-        href={url} 
-        target='_blank' 
-        className='newsLink'>
-            {title}
-            <br />
-            <span>{author}</span>
-        </a>
+            <a 
+            href={url} 
+            target='_blank' 
+            className='newsLink'>
+                {title}
+                <br />
+                <span>{author}</span>
+            </a>
         </>
     )
-  }
+}
 
 export default ArticleCard;
 
