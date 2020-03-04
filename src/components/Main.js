@@ -6,7 +6,7 @@ import About from './About';
 import Podcasts from './Podcasts';
 import Weather from './Weather';
 import Articles from '../containers/Articles';
-import Unsplash from '../containers/Unsplash';
+import Unsplash2 from '../containers/Unsplash2';
 
 const Main = () => (
   <main>
@@ -16,7 +16,7 @@ const Main = () => (
       <Route path='/about' component={About} />
       <Route path='/podcasts' component={Podcasts} />
       <Route path='/weather' component={Weather} />
-      <Route path='/unsplash' component={Unsplash} />
+      <Route path='/unsplash' component={Unsplash2} />
       {/* <Route path='/articles' component={Articles} /> */}
     </Switch>
   </main>
