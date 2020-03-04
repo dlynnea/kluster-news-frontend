@@ -1,22 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Article from './Article';
+// import { Link } from 'react-router-dom';
+// import Article from './Article';
 
-export default function ArticleCard(props) {
-    console.log(props)
+const ArticleCard = (props) => {
+    const { url, title, author } = props;
 
-    const renderArticles = props.articles.map(article => {
-        return(
-            <Article article={article} />
-        )
-    })
-
-    return(
-        <div>
-            {renderArticles}
-        </div>
+    return (
+        <>
+            <a 
+            href={url} 
+            target='_blank' 
+            className='newsLink'>
+                {title}
+                <br />
+                <span>{author}</span>
+            </a>
+        </>
     )
 }
+
+export default ArticleCard;
 
 
 // const ArticleCard = ({article}) => (

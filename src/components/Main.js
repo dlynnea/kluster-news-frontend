@@ -5,19 +5,23 @@ import Headlines from './Headlines';
 import About from './About';
 import Podcasts from './Podcasts';
 import Weather from './Weather';
-import Articles from '../containers/Articles';
+import Quanta from '../containers/Quanta';
 import Unsplash from '../containers/Unsplash';
+import Login from './Login';
+import Register from './Register';
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Feed} />
+      <Route exact path='/login' component={Login} />
+      <Route exact path='/users' component={Register} />
       <Route exact path='/headlines' component={Headlines} />
       <Route path='/about' component={About} />
       <Route path='/podcasts' component={Podcasts} />
       <Route path='/weather' component={Weather} />
       <Route path='/unsplash' component={Unsplash} />
-      {/* <Route path='/articles' component={Articles} /> */}
+      <Route path='/articles' component={Quanta} />
     </Switch>
   </main>
 )

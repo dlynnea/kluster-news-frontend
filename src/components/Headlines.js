@@ -32,7 +32,7 @@ class Headlines extends Component {
             e.preventDefault();
             const selectedIndex = e.target.options.selectedIndex;
             const sourceId = e.target.options[selectedIndex].getAttribute('data-ids');
-            handleSourceUpdate(sourceId,e.target.value)
+            handleSourceUpdate(sourceId, e.target.value)
           }
         }>
           <option>Select a news source</option>
