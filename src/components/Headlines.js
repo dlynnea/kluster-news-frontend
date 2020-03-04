@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NewsEntry from './NewsEntry';
-// import { API_KEY } from '../actions/key'; 
-import { updateSource } from '../actions/newsActions';
+import { updateSource } from '../redux-saga/actions';
 import { connect } from 'react-redux';
 
 const key = '34c503b70d6e4e9983f9dc86cc7781f1';
 
-class Headlines extends React.Component {
+class Headlines extends Component {
   constructor(props) {
     super(props);
 

@@ -1,4 +1,4 @@
-import * as types from '../actions/newsActions';
+import * as types from './actions';
 
 const initialState = {
   query: null,

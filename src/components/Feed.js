@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { updateQuery } from '../actions/newsActions';
+import { updateQuery } from '../redux-saga/actions';
 
 import NewsEntry from './NewsEntry';
 
@@ -19,7 +19,8 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-class Feed extends React.Component {
+class Feed extends Component {
+
   render () {
     const { query, news, handleUpdateQuery } = this.props;
 
@@ -46,7 +47,7 @@ class Feed extends React.Component {
               />
               ))
             )
-            : ( <p></p>)
+          : ( <p></p>)
         }
       </div>
     )

@@ -9,7 +9,7 @@ const Nav = (props) => {
             <ul>
                 <li className="login-btn" onClick={() => props.displayForm('login')}>login</li>
                 <li className="signup-btn" onClick={() => props.displayForm('signup')}>signup</li>
-                <li className="logo">cluster <i className="fa fa-pushed"></i></li>
+                <li className="logo">curata <i className="fa fa-pushed"></i></li>
             </ul>
         </nav>
     )

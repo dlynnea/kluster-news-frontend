@@ -6,18 +6,18 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from 'react-redux';
 import createSagaMiddleware from "redux-saga";
-import reducers from './reducers';
-import { watcherSaga } from './actions/fetchNews';
+import rootReducer from './redux-saga';
+// import { watcherSaga } from './redux-saga/sagas';
+import rootSaga from './redux-saga/sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
 let store = createStore(
-    reducers,
+    rootReducer,
     compose(applyMiddleware(sagaMiddleware))
-    
   );
 
-sagaMiddleware.run(watcherSaga);
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render((
     <Provider store={store}> 

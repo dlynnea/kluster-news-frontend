@@ -40,13 +40,14 @@ class App extends Component {
   }
 
   handleSignup = (event, data) => {
+    const user = { ...data }
     event.preventDefault();
     fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify({ user })
     })
     .then(response => response.json())
     .then(json => {
@@ -96,9 +97,10 @@ class App extends Component {
               <h3 className='divider'>Feed</h3>
               <Link className='link' to="/">Your News</Link>
               <Link className='link' to="/headlines">Top Headlines</Link>
+              <Link className='link' to="/unsplash">Art Inspo</Link>
               {/* <Link className='link' to="/articles">Quanta</Link> */}
-              <Link className='link' to="/about">About Cluster</Link>
               <h3 className='divider'>Other</h3>
+              <Link className='link' to="/about">About Cluster</Link>
               <Link className='link' to="/podcasts">Podcasts</Link>
               <Link className='link' to="/weather">Weather</Link>
             </div>
