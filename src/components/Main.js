@@ -6,6 +6,7 @@ import About from './About';
 import Podcasts from './Podcasts';
 import Weather from './Weather';
 import Quanta from '../containers/Quanta';
+import Verge from '../containers/Verge';
 import Unsplash from '../containers/Unsplash';
 import Login from './Login';
 import Register from './Register';
@@ -22,6 +23,7 @@ const Main = () => (
       <Route path='/weather' component={Weather} />
       <Route path='/unsplash' component={Unsplash} />
       <Route path='/articles' component={Quanta} />
+      <Route path='/verge' component={Verge} />
     </Switch>
   </main>
 )

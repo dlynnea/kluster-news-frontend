@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import fetchArticles from "../actions/fetchArticles";
-// import {getArticles, getArticlesPending, getArticlesError } from "../reducers/index";
-// import {bindActionCreators} from "redux";
-import ArticleCard from './ArticleCard'
+import VergeCard from './VergeCard'
 
-class Quanta extends Component {
+class Verge extends Component {
 
     state = {
-        articles: []
+        vergeArticles: []
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/articles')
+        fetch('http://localhost:3000/verge_articles')
           .then(response => response.json())
-          .then(articles => this.setState({ 
-              articles: articles 
+          .then(vergeArticles => this.setState({ 
+              vergeArticles: vergeArticles 
         }))
     }
 
     render() {
-        const { articles } = this.state;
+        const { vergeArticles } = this.state;
         const { article, handleArticleUpdate } = this.props;
 
         return (  
             <div>
-                {/* <h1>from Quanta Magazine</h1> */}
+                {/* <h1>from the Verge...</h1> */}
             <select 
               className='inputField'
               onChange={(e) => {
@@ -37,17 +33,17 @@ class Quanta extends Component {
             }>
             <option>Select...</option>
                 {
-                articles.map((article, i) => 
+                vergeArticles.map((article, i) => 
                     (<option key={i} data-ids={article.id}>{article.title}</option>))}
             </select>
-            <h3>Headlines from Quanta</h3>
+            <h3>Headlines from the Verge</h3>
                 {/* {
-                articles.map(article => (
+                vergeArticles.map(article => (
                     (article.title) ? (<h2 className='subtitle'><strong>{article.author}</strong></h2>) : (<p></p>)
                 ))} */}
             {
-              articles.map((article, i) => (
-                <ArticleCard 
+              vergeArticles.map((article, i) => (
+                <VergeCard 
                   key={i}
                   url={article.url}
                   title={article.title}
@@ -60,4 +56,4 @@ class Quanta extends Component {
     }
 }
 
-export default Quanta;
+export default Verge;
