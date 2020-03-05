@@ -21,7 +21,7 @@ class Register extends Component {
 
     render() {
         return(
-            <form onSubmit={event => this.handleSignup(event, this.state)}>
+            <form onSubmit={event => this.props.handleSignup(event, this.state, this.props.history)}>
             <h4>SIGN UP</h4>
             <input
             type="text"

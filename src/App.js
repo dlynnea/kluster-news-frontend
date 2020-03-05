@@ -22,7 +22,7 @@ class App extends Component {
     return moment(this.state.today.date).format('MMMM DD, YYYY')
 }
 
-  handleLogin = (event, data) => {
+  handleLogin = (event, data, history) => {
     console.log("hi")
     event.preventDefault();
     fetch('https://kurator-backend.herokuapp.com/login', {
@@ -35,6 +35,7 @@ class App extends Component {
     .then(response => response.json())
     .then((result) => {
       localStorage.setItem('token', result.token);
+      history.push('/')
       this.setState({
         logged_in: true,
         displayed_form: '',
@@ -43,7 +44,7 @@ class App extends Component {
     })
   }
 
-  handleSignup = (event, data) => {
+  handleSignup = (event, data, history) => {
     const user = { ...data }
     event.preventDefault();
     fetch('https://kurator-backend.herokuapp.com/users', {
@@ -56,6 +57,7 @@ class App extends Component {
     .then(response => response.json())
     .then(json => {
       localStorage.setItem('token', json.token);
+      history.push('/')
       this.setState({
         logged_in: true,
         displayed_form: '',

@@ -20,7 +20,7 @@ class Login extends Component {
 
     render() {
         return(
-            <form onSubmit={event => this.props.handleLogin(event, this.state)}>
+            <form onSubmit={event => this.props.handleLogin(event, this.state, this.props.history)}>
                 <h4>LOG IN</h4>
                 <input
                 type="text"
