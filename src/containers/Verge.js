@@ -8,7 +8,7 @@ class Verge extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/verge_articles')
+        fetch('https://kurator-backend.herokuapp.com/verge_articles')
           .then(response => response.json())
           .then(vergeArticles => this.setState({ 
               vergeArticles: vergeArticles 

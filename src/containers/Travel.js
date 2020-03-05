@@ -8,7 +8,7 @@ class Travel extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/travels')
+        fetch('https://kurator-backend.herokuapp.com/travels')
           .then(response => response.json())
           .then(travelArticles => this.setState({ 
               travelArticles: travelArticles 
