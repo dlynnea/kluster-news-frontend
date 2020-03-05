@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-// import { BrowserRouter as Link } from "react-router-dom";
+// import PropTypes from 'prop-types';
 
 class Login extends Component {
 
@@ -8,26 +7,6 @@ class Login extends Component {
         username: '',
         password: '',
     }
-
-    // handleLogin = (event, data) => {
-    //     event.preventDefault();
-    //     fetch('http://localhost:3000/login', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json',
-    //       },
-    //       body: JSON.stringify(data)
-    //     })
-    //     .then(response => response.json())
-    //     .then((result) => {
-    //       localStorage.setItem('token', result.token);
-    //       this.setState({
-    //         logged_in: true,
-    //         displayed_form: '',
-    //         username: result.username
-    //       })
-    //     })
-    // }
 
     handleChange = event => {
         const name = event.target.name;
@@ -40,6 +19,7 @@ class Login extends Component {
     }
 
     render() {
+        console.log("login", this.props)
         return(
             <form onSubmit={event => this.props.handleLogin(event, this.state)}>
                 <h4>LOG IN</h4>
@@ -65,6 +45,6 @@ class Login extends Component {
 
 export default Login;
 
-Login.propTypes = {
-    handleLogin: PropTypes.func.isRequired
-}
+// Login.propTypes = {
+//     handleLogin: PropTypes.func.isRequired
+// }

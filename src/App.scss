@@ -94,10 +94,18 @@ form h4 {
   text-shadow: 1px 1px 1px #333;
 }
 
+li.login-btn, li.logout-btn, li.signup-btn {
+  margin: 4px;
+}
+
 .logout-btn, .login-btn, .signup-btn {
-  border: 1px solid #666;
+  margin-top: 200px;
+  border: 2px inset $swan-white;
   padding: 7px 10px;
-  background-color: rgb(48, 47, 47);
+  height: 38px;
+  width: 94px;
+  background-color: rgb(36, 113, 141);
+  // background-color: rgb(15, 105, 83);
   opacity: 0.9;
   border-radius: 6px;
   color: $swan-white;
@@ -106,6 +114,7 @@ form h4 {
     // color: $swan-white;
     background-color: $swan-white;
     color: $ships-officer;
+    font-weight: bold;
     cursor: pointer;
   }
 }

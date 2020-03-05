@@ -13,7 +13,7 @@ class App extends Component {
   state = {
     logged_in: false,
     username: '',
-    displayed_form: '',
+    // displayed_form: '',
     today: [],
   }
 
@@ -26,6 +26,7 @@ class App extends Component {
 }
 
   handleLogin = (event, data) => {
+    console.log("hi")
     event.preventDefault();
     fetch('http://localhost:3000/login', {
       method: 'POST',
@@ -118,7 +119,11 @@ class App extends Component {
               <Link className='link' to="/about">about curator</Link>
             </div>
             <div className='secondColumn'>
-              <Main />
+              <Main 
+                handleLogin={this.handleLogin}
+                handleLogout={this.handleLogout}
+                handleSignup={this.handleSignup}
+              />
             </div>
           </div>
         <Footer />

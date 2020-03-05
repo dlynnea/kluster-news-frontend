@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-// import { BrowserRouter as Link, Redirect } from "react-router-dom";
+// import PropTypes from 'prop-types';
 
 class Register extends Component {
 
@@ -9,27 +8,6 @@ class Register extends Component {
         username: '',
         password: '',
     }
-
-    // handleSignup = (event, data) => {
-    //     const user = { ...data }
-    //     event.preventDefault();
-    //     fetch('http://localhost:3000/users', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body: JSON.stringify({ user })
-    //     })
-    //     .then(response => response.json())
-    //     .then(json => {
-    //       localStorage.setItem('token', json.token);
-    //       this.setState({
-    //         logged_in: true,
-    //         formDisplay: '',
-    //         username: json.username
-    //       })
-    //     })
-    // }
 
     handleChange = event => {
         const name = event.target.name;
@@ -74,6 +52,6 @@ class Register extends Component {
 
 export default Register;
 
-Register.propTypes = {
-    handleSignup: PropTypes.func.isRequired
-}
+// Register.propTypes = {
+//     handleSignup: PropTypes.func.isRequired
+// }

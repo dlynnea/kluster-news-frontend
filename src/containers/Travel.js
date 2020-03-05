@@ -21,7 +21,6 @@ class Travel extends Component {
 
         return (
             <div>
-                {/* <h1>from the Verge...</h1> */}
             <select 
               className='inputField'
               onChange={(e) => {
@@ -36,11 +35,7 @@ class Travel extends Component {
                 travelArticles.map((article, i) => 
                     (<option key={i} data-ids={article.id}>{article.title}</option>))}
             </select>
-            <h3>Featured Headlines from BBC Travel</h3>
-                {/* {
-                travelArticles.map(article => (
-                    (article.title) ? (<h2 className='subtitle'><strong>{article.author}</strong></h2>) : (<p></p>)
-                ))} */}
+            <h3>Headlines from BBC Travel</h3>
             {
               travelArticles.map((article, i) => (
                 <TravelCard 

@@ -13,23 +13,35 @@ import Travel from '../containers/Travel';
 import Login from './Login';
 import Register from './Register';
 
-const Main = () => (
-  <main>
-    <Switch>
-      <Route exact path='/' component={Feed} />
-      <Route path='/login' component={Login} />
-      <Route exact path='/register' component={Register} />
-      <Route exact path='/headlines' component={Headlines} />
-      <Route path='/about' component={About} />
-      <Route path='/podcasts' component={Podcasts} />
-      <Route path='/weather' component={Weather} />
-      <Route path='/unsplash' component={Unsplash} />
-      <Route path='/articles' component={Quanta} />
-      <Route path='/verge' component={Verge} />
-      <Route path='/travel' component={Travel} />
-      <Route path='/mbg' component={Mbg} />
-    </Switch>
-  </main>
-)
+const Main = (props) => {
+
+  const { handleLogin, handleSignup } = props
+
+  return(
+    <main>
+      {console.log("main", props)}
+      <Switch>
+        <Route exact path='/' component={Feed} />
+        <Route 
+          path='/login' 
+          render={ (props) => <Login {...props} handleLogin={handleLogin}/> }
+        />
+        <Route 
+          exact path='/register' 
+          render={ (props) => <Register {...props} handleSignup={handleSignup}/> } 
+        />
+        <Route exact path='/headlines' component={Headlines} />
+        <Route path='/about' component={About} />
+        <Route path='/podcasts' component={Podcasts} />
+        <Route path='/weather' component={Weather} />
+        <Route path='/unsplash' component={Unsplash} />
+        <Route path='/articles' component={Quanta} />
+        <Route path='/verge' component={Verge} />
+        <Route path='/travel' component={Travel} />
+        <Route path='/mbg' component={Mbg} />
+      </Switch>
+    </main>
+  )
+}
 
 export default Main;
