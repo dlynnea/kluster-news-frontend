@@ -4,7 +4,6 @@ import PicList from './PicList'
 import axios from 'axios'
 
 const access = 'wMJUZTzA_Z3xLfQySAqtXXk42gnNYpHEqL4qUpzOoz8';
-const baseUrl = 'https://api.unsplash.com/search/photos/?page=1&per_page=10&query=botanical&client_id='
 
 const LOAD_STATE = {
   SUCCESS: 'SUCCESS',
@@ -12,16 +11,14 @@ const LOAD_STATE = {
   LOADING: 'LOADING'
 };
 
-
 class Unsplash extends Component {
-
 
     state = {
       photos: {
           results: []
       },
       totalPhotos: 0,
-      perPage: 10,
+      perPage: 9,
       currentPage: 1,
       loadState: LOAD_STATE.LOADING
     }
@@ -34,7 +31,7 @@ class Unsplash extends Component {
   fetchPhotos(page) {
     var self = this;
     const { perPage } = this.state;
-    const { appId, baseUrl } = this.props;
+    const { appId } = this.props;
     const options = {
       params: {
         client_id: appId,

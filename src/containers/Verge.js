@@ -36,7 +36,7 @@ class Verge extends Component {
                 vergeArticles.map((article, i) => 
                     (<option key={i} data-ids={article.id}>{article.title}</option>))}
             </select>
-            <h3>Headlines from the Verge</h3>
+            <h3 className="verge-headline">Headlines from the Verge</h3>
                 {/* {
                 vergeArticles.map(article => (
                     (article.title) ? (<h2 className='subtitle'><strong>{article.author}</strong></h2>) : (<p></p>)

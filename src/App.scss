@@ -104,10 +104,13 @@ li.login-btn, li.logout-btn, li.signup-btn {
   padding: 7px 10px;
   height: 38px;
   width: 94px;
-  background-color: rgb(36, 113, 141);
+  // background-color: rgb(36, 113, 141);
+  background-color: rgb(86, 153, 122);
   opacity: 0.9;
-  border-radius: 6px;
-  color: $swan-white;
+  border-radius: 4px;
+  // color: $swan-white;
+  color: black;
+  font-size: 1.3rem;
 
   &:hover {
     background-color: $swan-white;
@@ -157,8 +160,32 @@ li.logo {
   width: 200px;
   height: auto;
   display: block;
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0,0,0, 0.4);
+}
+
+.bbc-headline {
+  padding: 12px 2px 8px 8px;
+  background-color: rgba(153, 121, 86, 0.7);
+  border-radius: 4px;
+}
+
+.verge-headline {
+  padding: 12px 2px 8px 8px;
+  background-color: rgba(172, 224, 224, 0.7);
+  border-radius: 4px;
+}
+
+.mbg-headline {
+  padding: 12px 2px 8px 8px;
+  background-color: rgba(86, 153, 122, 0.7);
+  border-radius: 4px;
+}
+
+.quanta-headline {
+  padding: 12px 2px 8px 8px;
+  background-color: rgba(206, 57, 59, 0.803);
+  border-radius: 4px;
 }
 
 .article-card{
@@ -220,7 +247,7 @@ header h1{
   margin-right: 14px;
   padding: 7px 12px;
   margin-bottom: 20px;
-  border-radius: 14px;
+  border-radius: 4px;
   background-color: #f7f1e3de;
   box-shadow: 0 3px 6px rgba(0,0,0,.2);
 }
@@ -525,7 +552,7 @@ footer {
     width: 1em;
     height: 1em;
     border: 2px solid #ccc;
-    border-top-color: #793e55;
+    border-top-color: #702b45;
     border-radius: 50%;
     animation: spinner 1s linear infinite;
   }
