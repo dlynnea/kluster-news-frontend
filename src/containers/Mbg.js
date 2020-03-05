@@ -8,7 +8,7 @@ class Mbg extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/mbg_verticles')
+        fetch('https://kurator-backend.herokuapp.com/mbg_verticles')
           .then(response => response.json())
           .then(mbgArticles => this.setState({ 
               mbgArticles: mbgArticles 

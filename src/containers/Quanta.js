@@ -12,7 +12,7 @@ class Quanta extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/articles')
+        fetch('https://kurator-backend.herokuapp.com/articles')
           .then(response => response.json())
           .then(articles => this.setState({ 
               articles: articles 

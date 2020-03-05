@@ -25,7 +25,7 @@ class App extends Component {
   handleLogin = (event, data) => {
     console.log("hi")
     event.preventDefault();
-    fetch('http://localhost:3000/login', {
+    fetch('https://kurator-backend.herokuapp.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ class App extends Component {
   handleSignup = (event, data) => {
     const user = { ...data }
     event.preventDefault();
-    fetch('http://localhost:3000/users', {
+    fetch('https://kurator-backend.herokuapp.com/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
