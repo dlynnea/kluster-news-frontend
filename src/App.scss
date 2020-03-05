@@ -105,7 +105,7 @@ li.login-btn, li.logout-btn, li.signup-btn {
   height: 38px;
   width: 94px;
   // background-color: rgb(36, 113, 141);
-  background-color: rgb(86, 153, 122);
+  background-color: $swan-white;
   opacity: 0.9;
   border-radius: 4px;
   // color: $swan-white;
@@ -113,7 +113,7 @@ li.login-btn, li.logout-btn, li.signup-btn {
   font-size: 1.3rem;
 
   &:hover {
-    background-color: $swan-white;
+    background-color: rgb(86, 153, 122);
     color: $ships-officer;
     font-weight: bold;
     cursor: pointer;
