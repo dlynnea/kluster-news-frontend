@@ -1,38 +1,11 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import { BrowserRouter as Link } from "react-router-dom";
+// import PropTypes from 'prop-types';
 
 class Login extends Component {
 
     state = {
         username: '',
         password: '',
-        displayed_form: true,
-        logged_in: false
-    }
-
-    displayForm = form => {
-        this.setState({ displayed_form: form })
-    }
-
-    handleLogin = (event, data) => {
-        event.preventDefault();
-        fetch('http://localhost:3000/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then((result) => {
-          localStorage.setItem('token', result.token);
-          this.setState({
-            logged_in: true,
-            displayed_form: '',
-            username: result.username
-          })
-        })
     }
 
     handleChange = event => {
@@ -46,8 +19,9 @@ class Login extends Component {
     }
 
     render() {
+        console.log("login", this.props)
         return(
-            <form onSubmit={event => this.handleLogin(event, this.state)}>
+            <form onSubmit={event => this.props.handleLogin(event, this.state)}>
                 <h4>LOG IN</h4>
                 <input
                 type="text"
@@ -64,7 +38,6 @@ class Login extends Component {
                 onChange={this.handleChange}
                 />
                 <input className="input-btn" type="submit" />
-                <p><Link className="register-link" to='/register'>Need to Create an Account?</Link></p>
             </form>
         )
     }

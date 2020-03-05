@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import { BrowserRouter as Link, Redirect } from "react-router-dom";
+// import PropTypes from 'prop-types';
 
 class Register extends Component {
 
@@ -8,28 +7,6 @@ class Register extends Component {
         name: '',
         username: '',
         password: '',
-        formDisplay: true
-    }
-
-    handleSignup = (event, data) => {
-        const user = { ...data }
-        event.preventDefault();
-        fetch('http://localhost:3000/users', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ user })
-        })
-        .then(response => response.json())
-        .then(json => {
-          localStorage.setItem('token', json.token);
-          this.setState({
-            logged_in: true,
-            formDisplay: '',
-            username: json.username
-          })
-        })
     }
 
     handleChange = event => {
@@ -44,7 +21,7 @@ class Register extends Component {
 
     render() {
         return(
-            <form onSubmit={event => this.handleSignup()}>
+            <form onSubmit={event => this.handleSignup(event, this.state)}>
             <h4>SIGN UP</h4>
             <input
             type="text"
@@ -68,7 +45,6 @@ class Register extends Component {
             onChange={this.handleChange}
             />
             <input className="input-btn" type="submit" />
-            <p><Redirect className="login-link" to='/login'>Already have an Account?</Redirect></p>
         </form>
         )
     }
