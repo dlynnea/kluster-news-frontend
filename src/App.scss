@@ -82,7 +82,8 @@ nav li {
 }
 
 form h4 {
-  color: $off-white;
+  color: $ships-officer;
+  font-size: 1.4rem;
 }
 
 .nav-btn {
@@ -98,12 +99,12 @@ form h4 {
   padding: 7px 10px;
   background-color: rgb(48, 47, 47);
   opacity: 0.9;
-  border-radius: 3px;
+  border-radius: 6px;
   color: $swan-white;
 
   &:hover {
     // color: $swan-white;
-    // background-color: #ad9862;
+    background-color: $swan-white;
     color: $ships-officer;
     cursor: pointer;
   }
@@ -116,22 +117,25 @@ form {
   flex-direction: column;
   margin: 200px;
   padding: 80px;
-  width: 600px;
-  border: 1px solid black;
+  width: 50%;
+  height: 50vh;
+  border: 1px solid $ship-officer;
   box-shadow: 10px 10px 20px 1px grey;
-  background-color: $ships-officer;
+  // background-color: $ships-officer;
   border-radius: 10px;
 }
 
 form input {
   width: 200px;
+  margin-bottom: 20px;
   height: 40px;
   border-radius: 4px;
   font-size: 1rem;
 }
 
 .input-btn:hover {
-  background-color: $light-color;
+  // background-color: $light-color;
+  background-color: #288383c5;
 }
 
 .home {
@@ -142,7 +146,7 @@ li.logo {
   float: left;
   color: #2e5858f5;
   padding: 6px 6px;
-  margin-left: 12px;
+  margin-left: 28px;
   font-size: 2.8rem;
   background-color: rgba(233, 231, 231, 0.8);
   width: 200px;
@@ -180,7 +184,7 @@ header {
   background: $light-color;
   color: $swan-white;
   padding: 20px 0;
-  height: 200px;
+  height: 250px;
   position: block;
   width: 100%;
   opacity: 0.9;
@@ -208,7 +212,7 @@ header h1{
 }
 
 .date {
-  margin: 0;
+  margin-right: 14px;
   // border: 1px solid $ships-officer;
   padding: 7px 12px;
   margin-bottom: 20px;
@@ -234,7 +238,7 @@ div.row.no-gutters {
 }
 
 .container .firstColumn {
-  padding: 30px 20px 20px 40px;
+  padding: 30px 20px 0 40px;
   background-color: $bright-yarrow;
   position: relative;
 }
