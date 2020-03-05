@@ -35,7 +35,7 @@ class Travel extends Component {
                 travelArticles.map((article, i) => 
                     (<option key={i} data-ids={article.id}>{article.title}</option>))}
             </select>
-            <h3>Headlines from BBC Travel</h3>
+            <h3 className="bbc-headline">Headlines from BBC Travel</h3>
             {
               travelArticles.map((article, i) => (
                 <TravelCard 

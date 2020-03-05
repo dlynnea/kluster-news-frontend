@@ -19,7 +19,6 @@ class Login extends Component {
     }
 
     render() {
-        console.log("login", this.props)
         return(
             <form onSubmit={event => this.props.handleLogin(event, this.state)}>
                 <h4>LOG IN</h4>

@@ -36,7 +36,7 @@ class Mbg extends Component {
                 mbgArticles.map((article, i) => 
                     (<option key={i} data-ids={article.id}>{article.title}</option>))}
             </select>
-            <h3>Featured Headlines from Mind Body Green Wellness</h3>
+            <h3 className="mbg-headline">Headlines from Mind Body Green Wellness</h3>
                 {/* {
                 mbgArticles.map(article => (
                     (article.title) ? (<h2 className='subtitle'><strong>{article.author}</strong></h2>) : (<p></p>)

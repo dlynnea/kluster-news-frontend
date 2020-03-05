@@ -40,7 +40,7 @@ class Quanta extends Component {
                 articles.map((article, i) => 
                     (<option key={i} data-ids={article.id}>{article.title}</option>))}
             </select>
-            <h3>Headlines from Quanta</h3>
+            <h3 className="quanta-headline">Headlines from Quanta Magazine</h3>
                 {/* {
                 articles.map(article => (
                     (article.title) ? (<h2 className='subtitle'><strong>{article.author}</strong></h2>) : (<p></p>)

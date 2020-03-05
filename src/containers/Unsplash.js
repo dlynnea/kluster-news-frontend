@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Pagination from './Pagination'
-import List from './List'
+import PicList from './PicList'
 import axios from 'axios'
 
 const access = 'wMJUZTzA_Z3xLfQySAqtXXk42gnNYpHEqL4qUpzOoz8';
@@ -12,18 +12,17 @@ const LOAD_STATE = {
 };
 
 class Unsplash extends Component {
-  constructor() {
-    super();
-    this.state = {
+
+    state = {
       photos: {
           results: []
       },
       totalPhotos: 0,
-      perPage: 10,
+      perPage: 9,
       currentPage: 1,
       loadState: LOAD_STATE.LOADING
     }
-  }
+  
   
   componentDidMount() {
     this.fetchPhotos(this.state.currentPage);
@@ -32,7 +31,7 @@ class Unsplash extends Component {
   fetchPhotos(page) {
     var self = this;
     const { perPage } = this.state;
-    const { appId, baseUrl } = this.props;
+    const { appId } = this.props;
     const options = {
       params: {
         client_id: appId,
@@ -58,7 +57,7 @@ class Unsplash extends Component {
   
   render() {
     return (
-      <div className="app">
+      <div>
         <Pagination
           current={this.state.currentPage}
           total={this.state.totalPhotos} 
@@ -67,7 +66,7 @@ class Unsplash extends Component {
         />
         {this.state.loadState === LOAD_STATE.LOADING
             ? <div className="loader"></div>
-            : <List photos={this.state.photos} />  
+            : <PicList photos={this.state.photos} />  
           }
       </div>
     )
