@@ -19,7 +19,6 @@ const Main = (props) => {
 
   return(
     <main>
-      {console.log("main", props)}
       <Switch>
         <Route exact path='/' component={Feed} />
         <Route 

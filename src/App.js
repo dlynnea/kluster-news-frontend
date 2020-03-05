@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import Main from './components/Main'
 import {Header} from './components/Header'
 import Footer from './components/Footer'
-import Login from './components/Login'
-import Register from './components/Register'
 import moment from 'moment';
 import './App.scss';
 
@@ -13,7 +11,6 @@ class App extends Component {
   state = {
     logged_in: false,
     username: '',
-    // displayed_form: '',
     today: [],
   }
 
@@ -73,17 +70,6 @@ class App extends Component {
   }
 
   render() {
-    // let form;
-    // switch (this.state.displayed_form) {
-    // case 'login':
-    //     form = <Login handleLogin={this.handleLogin} />
-    //     break;
-    // case 'signup':
-    //     form = <Register handleSignup={this.handleSignup} />
-    //     break;
-    // default:
-    //     form = null;
-    // }
 
     return(
       <>
@@ -96,12 +82,9 @@ class App extends Component {
         />
           <div className='container'>
             <div className='firstColumn'>
-              {/* {form} */}
               {/* <img className='logo' src={logo} alt="Clustr" /> */}
               {/* <h1 className='title'>menú</h1> */}
               <p className='date'>Todays Date: {this.todaysDate()} </p>
-              {/* <Link className='link' to="/login">login</Link>
-              <Link className='link' to="/register">sign up</Link> */}
               <h3 className='divider'></h3>
               <Link className='link' to="/">home</Link>
               <Link className='link' to="/">profile</Link>

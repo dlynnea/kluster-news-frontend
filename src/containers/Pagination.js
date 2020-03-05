@@ -56,13 +56,13 @@ class Pagination extends Component {
     render() {
       return (
         <div className="pagination">
-          <div className="pagination__left">
+          <div className="pag-left">
             <a href="#" className={!this.hasPrev() ? 'hidden': ''}
               onClick={e => this.changePage(this.prevPage())}
             >Prev</a>
           </div>
   
-          <div className="pagination__mid">
+          <div className="pag-mid">
             <ul>
               <li className={!this.hasFirst() ? 'hidden' : ''}>
                 <a href="#" onClick={e => this.changePage(1)}>1</a>
@@ -87,7 +87,7 @@ class Pagination extends Component {
             </ul>
           </div>
   
-          <div className="pagination__right">
+          <div className="pag-right">
             <a href="#" className={!this.hasNext() ? 'hidden' : ''}
               onClick={e => this.changePage(this.nextPage())}
             >Next</a>
