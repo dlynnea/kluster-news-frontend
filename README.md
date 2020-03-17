@@ -1,4 +1,4 @@
-# Kurator
+# Curator
 
 A content aggregator using a Ruby on Rails Backend (https://github.com/dlynnea/kluster-backend), React Frontend and webcrawlers using Python's Scrapy Framework. The project also includes an up to date news API provided by NewsApi.org as well as the Unsplash API found at https://unsplash.com/developers.
 
