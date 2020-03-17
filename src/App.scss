@@ -242,12 +242,13 @@ header h1{
 }
 
 .date {
-  margin-right: 14px;
-  padding: 7px 12px;
-  margin-bottom: 20px;
+  // margin-right: 24px;
+  padding: 10px 0;
+  // margin-bottom: 20px;
   border-radius: 4px;
   background-color: #f7f1e3de;
   box-shadow: 0 3px 6px rgba(0,0,0,.2);
+  text-align: center;
 }
 
 div.row.no-gutters {

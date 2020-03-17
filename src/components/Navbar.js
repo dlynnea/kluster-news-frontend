@@ -16,7 +16,7 @@ const Nav = (props) => {
             <ul>
                 <li className="login-btn" onClick={redirectToLogin}>login</li>
                 <li className="signup-btn" onClick={redirectToSignup}>signup</li>
-                <li className="logo">kurator <i className="fa fa-pushed"></i></li>
+                <li className="logo">curator <i className="fa fa-pushed"></i></li>
             </ul>
         </nav>
     )

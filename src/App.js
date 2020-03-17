@@ -85,8 +85,7 @@ class App extends Component {
           <div className='container'>
             <div className='firstColumn'>
               {/* <img className='logo' src={logo} alt="Clustr" /> */}
-              {/* <h1 className='title'>menú</h1> */}
-              <p className='date'>Todays Date: {this.todaysDate()} </p>
+              <p className='date'>{this.todaysDate()} </p>
               <h3 className='divider'></h3>
               <Link className='link' to="/">home</Link>
               <Link className='link' to="/">profile</Link>
