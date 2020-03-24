@@ -29,10 +29,9 @@ Node-Sass
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+This project was deployed using Heroku for backend and Firebase for front end. It can be found at: https://kurator-feed.firebaseapp.com
 
 ## Built With
-??????
 
 * [Scapy](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Rails](https://maven.apache.org/) - Dependency Management
