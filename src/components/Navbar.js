@@ -25,7 +25,7 @@ const Nav = (props) => {
         <nav>
             <ul>
                 <li className="logout-btn" onClick={props.handleLogout}>logout</li>
-                <li className="logo">kurator <i className="fa fa-pushed"></i></li>
+                <li className="logo">curator <i className="fa fa-pushed"></i></li>
             </ul>
         </nav>
     )

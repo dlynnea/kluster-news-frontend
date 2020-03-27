@@ -32,7 +32,6 @@ Node-Sass
 Add additional notes about how to deploy this on a live system
 
 ## Built With
-??????
 
 * [Scapy](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Rails](https://maven.apache.org/) - Dependency Management
