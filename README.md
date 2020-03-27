@@ -1,4 +1,4 @@
-# Kurator
+# Curator
 
 A content aggregator using a Ruby on Rails Backend (https://github.com/dlynnea/kluster-backend), React Frontend and webcrawlers using Python's Scrapy Framework. The project also includes an up to date news API provided by NewsApi.org as well as the Unsplash API found at https://unsplash.com/developers.
 
@@ -29,7 +29,7 @@ Node-Sass
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+This project was deployed using Heroku for backend and Firebase for front end. It can be found at: https://kurator-feed.firebaseapp.com
 
 ## Built With
 
