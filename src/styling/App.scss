@@ -1,33 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap');
-  
-$header-nav-height: 64px;
-$sidebar-left-width: 19rem;
-$text-color-dark: #111111;
-$avatar-diameter: 48px;
-$avatar-margin: 10px;
-
-$main-font: 'Spartan', sans-serif;
-$dusty-rose: #c28285;
-$background-color: rgb(228, 226, 226);
-$liberty: #474787;
-$jacksons-purple: #40407a;
-$swan-white: #f7f1e3;
-$dark-white: #dcd3bd;
-$off-white: #f5f3ee;
-$palmsprings: #218c74;
-$butternut: #ffda79;
-$grey-porcelain: #84817a;
-$devil-blue: #227093;
-$ships-officer: #2C3A47;
-$ship-officer: #89a7b4;
-$dark-color: rgb(53, 50, 50);
-$light-color: #77a39a;
-$matchy: rgba(212, 198, 198, 0.9);
-$brown: rgb(97, 92, 92);
-$bright-yarrow: #fdcb6e;
-$dupain: #60a3bc;
+@import 'config';
 
 * {
   font-family: $main-font;
@@ -219,7 +190,7 @@ header {
   position: block;
   width: 100%;
   opacity: 0.9;
-  background: url('color-shapes3.jpg') no-repeat;
+  background: url('../images/color-shapes3.jpg') no-repeat;
   background-size: cover;
   background-attachment: static;
 }
@@ -373,7 +344,7 @@ div.row.no-gutters {
 }
 
 footer {
-  background: #288383af;
+  background: #2883833e;
   padding: 6px;
   color: #fff;
   justify-content: right;

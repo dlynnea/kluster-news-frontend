@@ -4,7 +4,7 @@ import Main from './components/Main'
 import {Header} from './components/Header'
 import Footer from './components/Footer'
 import moment from 'moment';
-import './App.scss';
+import './styling/App.scss';
 
 class App extends Component {
 
