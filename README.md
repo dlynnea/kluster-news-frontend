@@ -33,7 +33,7 @@ This project was deployed using Heroku for backend and Firebase for front end. I
 
 ## Built With
 
-* [Scapy](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Scrapy](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Rails](https://maven.apache.org/) - Dependency Management
 * [React](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
