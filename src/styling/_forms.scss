@@ -13,6 +13,7 @@
   
     .form input[type='submit'] {
       width: 320px;
+      margin-top: 20px;
     }
 }
 
@@ -46,16 +47,10 @@ form {
 
     input {
         width: 100%;
-        margin-top: 20px;
         padding: 10px 6px;
         border-radius: 4px;
         font-size: 1rem;
     }
-}
-  
-
-.form .form-input {
-    // margin: 2.6rem 0;
 }
 
 .auth-form .form-input {
@@ -117,7 +112,7 @@ div.form-element-bar {
     pointer-events: none;
     padding-left: 0.125rem;
     z-index: 1;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
     white-space: nowrap;
     overflow: hidden;
