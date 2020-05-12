@@ -28,3 +28,167 @@ $matchy: rgba(212, 198, 198, 0.9);
 $brown: rgb(97, 92, 92);
 $bright-yarrow: #fdcb6e;
 $dupain: #60a3bc;
+
+
+//
+
+$primary-color: #3f6d6bf1;
+$navbar: #343535;
+$secondary-color: rgba(249, 247, 245, 0.9);
+$dark-color: rgb(24, 39, 43);
+$off-white: rgb(244, 241, 238);
+// $backlight: rgba(160, 195, 199, 0.735);
+$backlight: rgba(135, 179, 175, 0.927);
+// $background: rgb(63, 66, 69);
+$background: #252626;
+$table: rgb(52, 55, 57);
+$form-placeholder: rgb(150, 145, 145);
+$form-label: rgb(218, 214, 214);
+$xl-font-color: #3f6d6b;
+$warning: #c04b4bd6;
+$success: #81cebe;
+
+
+.btn-primary,
+.bg-primary,
+.alert-primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.btn-light,
+.bg-light,
+.alert-light {
+  background-color: $backlight;
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark,
+.alert-dark {
+  background-color: $primary-color;
+  color: #fff;
+//   border: $off-white;
+}
+
+.btn-danger,
+.bg-danger,
+.alert-danger {
+  background-color: $warning;
+  color: #fff;
+}
+
+.btn-success,
+.bg-success,
+.alert-success {
+  background-color: $success;
+  color: #fff;
+}
+
+.btn-white,
+.bg-white,
+.alert-white {
+  background-color: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+/* Padding */
+.p {
+    padding: 0.5rem;
+}
+.p-1 {
+    padding: 1rem;
+}
+.p-2 {
+    padding: 2rem;
+}
+.p-3 {
+    padding: 3rem;
+}
+.py {
+    padding: 0.5rem 0;
+}
+.py-1 {
+    padding: 1rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+
+/* Margin */
+.m {
+    margin: 0.5rem;
+}
+.m-1 {
+    margin: 1rem;
+}
+.m-2 {
+    margin: 2rem;
+}
+.m-3 {
+    margin: 3rem;
+}
+.my {
+    margin: 0.5rem 0;
+}
+.my-1 {
+    margin: 1rem 0;
+}
+.my-2 {
+    margin: 2rem 0;
+}
+.my-3 {
+    margin: 3rem 0;
+}
+.m-1-2 {
+    margin: 1rem 2rem;
+}
+.m-1-3 {
+    margin: 1rem 3rem;
+}
+
+/* bootstrap texts */
+
+.xl {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: $xl-font-color;
+  }
+  
+.lg {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+  
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $off-white;
+}
+  
+.text-center {
+    text-align: center;
+}
+  
+.primary-txt {
+    color: $text-color-dark;
+}
+
+h1.primary-txt-form{
+    border-bottom: 1px dotted $primary-color;
+    color: $off-white;
+}
+
+.secondary-txt {
+    color: $primary-color;
+}
+  
+.dark-txt {
+    color: $dark-color;
+}
