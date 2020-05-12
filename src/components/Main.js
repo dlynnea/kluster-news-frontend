@@ -10,8 +10,8 @@ import Verge from '../containers/Verge';
 import Unsplash from '../containers/Unsplash';
 import Mbg from '../containers/Mbg';
 import Travel from '../containers/Travel';
-import Login from './Login';
-import Register from './Register';
+import Login from './Auth/Login';
+import Register from './Auth/Register';
 
 const Main = (props) => {
 

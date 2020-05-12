@@ -14,10 +14,6 @@ class App extends Component {
     today: [],
   }
 
-  displayForm = form => {
-    this.setState({ displayed_form: form })
-  }
-
   todaysDate(){
     return moment(this.state.today.date).format('MMMM DD, YYYY')
 }

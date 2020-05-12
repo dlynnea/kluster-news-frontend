@@ -94,13 +94,14 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #fff;
   margin: 200px;
   padding: 80px;
   width: 50%;
   height: 50vh;
   border: 1px solid $ship-officer;
   box-shadow: 10px 10px 20px 1px grey;
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 
 form input {
