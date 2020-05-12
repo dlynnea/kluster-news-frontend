@@ -22,7 +22,7 @@ class Login extends Component {
     render() {
         return(
         <section className="auth-container">
-        <h1 className="lg primary-txt">Login</h1>
+        <h1 className="primary-txt">Login</h1>
         <form className="form auth-form" onSubmit={event => this.props.handleLogin(event, this.state, this.props.history)}>
             <div className="form-input form-element">
                 <input 
@@ -50,8 +50,8 @@ class Login extends Component {
             <label className="form-element-label">Password</label>
             </div>
             <input type="submit" className="btn btn-primary" value="Login" />
-        <p className="my-1 primary-txt">Don't have an account? <Link to='/register'>Sign Up</Link></p>
         </form>
+        <p className="my-1 primary-txt">Don't have an account? <Link to='/register'>Sign Up</Link></p>
         </section>
 
 
