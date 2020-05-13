@@ -17,7 +17,7 @@ class Verge extends Component {
 
     render() {
         const { vergeArticles } = this.state;
-        const { article, handleArticleUpdate } = this.props;
+        const { handleArticleUpdate } = this.props;
 
         return (  
             <div>

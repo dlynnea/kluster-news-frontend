@@ -34,13 +34,13 @@ class App extends Component {
       history.push('/')
       this.setState({
         logged_in: true,
-        displayed_form: '',
         username: result.username
       })
     })
   }
 
   handleSignup = (event, data, history) => {
+    console.log('signup bee')
     const user = { ...data }
     event.preventDefault();
     fetch('https://kurator-backend.herokuapp.com/users', {
@@ -56,7 +56,6 @@ class App extends Component {
       history.push('/')
       this.setState({
         logged_in: true,
-        displayed_form: '',
         username: json.username
       })
     })
@@ -82,7 +81,7 @@ class App extends Component {
             <div className='firstColumn'>
               {/* <img className='logo' src={logo} alt="Clustr" /> */}
               <p className='date'>{this.todaysDate()} </p>
-              <h3 className='divider'></h3>
+              {/* <h3 className='divider'></h3> */}
               <Link className='link' to="/">home</Link>
               <Link className='link' to="/">profile</Link>
               <h3 className='divider'>feed</h3>

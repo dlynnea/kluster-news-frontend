@@ -22,54 +22,49 @@ class Register extends Component {
 
     render() {
         return(
-
-<section className="auth-container">
-        <h1 className="primary-txt">Create an Account</h1>
-        <form className="form auth-form" onSubmit={event => this.props.handleLogin(event, this.state, this.props.history)}>
-            <div className="form-input form-element">
-                <input 
-                className="form-element-field" 
-                type="Name" 
-                placeholder="Name"
-                value={this.state.name}
-                onChange={this.handleChange}
-                name="Name"
-                required />
-                <div className="form-element-bar"></div>
-            <label className="form-element-label">Name</label>
-            </div>
-            <div className="form-input form-element">
-                <input 
-                className="form-element-field" 
-                type="username" 
-                placeholder="Username"
-                value={this.state.username}
-                onChange={this.handleChange}
-                name="username"
-                required />
-                <div className="form-element-bar"></div>
-            <label className="form-element-label">Username</label>
-            </div>
-            <div className="form-input form-element">
-                <input 
-                className="form-element-field" 
-                type="password" 
-                placeholder="Password"
-                name="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-                minLength="6" />
-                <div className="form-element-bar"></div>
-            <label className="form-element-label">Password</label>
-            </div>
-            <input type="submit" className="btn btn-primary" value="Register" />
-        </form>
-        <p className="my-1 primary-txt">Already have an account? <Link to='/login'>Login</Link></p>
+        <section className="auth-container">
+            <h1 className="primary-txt">Create an Account</h1>
+            <form className="form auth-form" onSubmit={event => this.props.handleSignup(event, this.state, this.props.history)}>
+                <div className="form-input form-element">
+                    <input 
+                        className="form-element-field" 
+                        type="text" 
+                        placeholder="Name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
+                        name="name"
+                    />
+                    <div className="form-element-bar"></div>
+                <label className="form-element-label">Name</label>
+                </div>
+                <div className="form-input form-element">
+                    <input 
+                        className="form-element-field" 
+                        type="text" 
+                        placeholder="Username"
+                        value={this.state.username}
+                        onChange={this.handleChange}
+                        name="username"
+                    />
+                    <div className="form-element-bar"></div>
+                <label className="form-element-label">Username</label>
+                </div>
+                <div className="form-input form-element">
+                    <input 
+                        className="form-element-field" 
+                        type="password" 
+                        placeholder="Password"
+                        name="password"
+                        value={this.state.password}
+                        onChange={this.handleChange}
+                    />
+                    <div className="form-element-bar"></div>
+                <label className="form-element-label">Password</label>
+                </div>
+                <input type="submit" className="btn btn-primary" value="Register" />
+            </form>
+            <p className="my-1 primary-txt">Already have an account? <Link to='/login'>Login</Link></p>
         </section>
-
-
-
         //     <form onSubmit={event => this.props.handleSignup(event, this.state, this.props.history)}>
         //     <h4>SIGN UP</h4>
         //     <input

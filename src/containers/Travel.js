@@ -17,7 +17,7 @@ class Travel extends Component {
 
     render() {
         const { travelArticles } = this.state;
-        const { article, handleArticleUpdate } = this.props;
+        const { handleArticleUpdate } = this.props;
 
         return (
             <div>

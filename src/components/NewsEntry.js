@@ -4,7 +4,7 @@ const NewsEntry = (props) => {
   const { url, title, author } = props;
 
   return (
-  <a href={url} target='_blank' className='newsLink'>{title}<br /><span>{author}</span></a>
+  <a href={url} target='_blank' rel="noopener noreferrer" className='newsLink'>{title}<br /><span>{author}</span></a>
   )
 }
 

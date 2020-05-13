@@ -38,14 +38,14 @@ class Login extends Component {
             </div>
             <div className="form-input form-element">
                 <input 
-                className="form-element-field" 
-                type="password" 
-                placeholder="Password"
-                name="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-                minLength="6" />
+                    className="form-element-field" 
+                    type="password" 
+                    placeholder="Password"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.handleChange}
+                    required
+                />
                 <div className="form-element-bar"></div>
             <label className="form-element-label">Password</label>
             </div>
@@ -53,27 +53,6 @@ class Login extends Component {
         </form>
         <p className="my-1 primary-txt">Don't have an account? <Link to='/register'>Sign Up</Link></p>
         </section>
-
-
-
-            // <form onSubmit={event => this.props.handleLogin(event, this.state, this.props.history)}>
-            //     <h4>LOG IN</h4>
-            //     <input
-            //     type="text"
-            //     name="username"
-            //     placeholder="username"
-            //     value={this.state.username}
-            //     onChange={this.handleChange}
-            //     />
-            //     <input
-            //     type="password"
-            //     name="password"
-            //     placeholder="password"
-            //     value={this.state.password}
-            //     onChange={this.handleChange}
-            //     />
-            //     <input className="input-btn" type="submit" />
-            // </form>
         )
     }
 }
