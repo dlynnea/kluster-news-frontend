@@ -40,6 +40,7 @@ class App extends Component {
   }
 
   handleSignup = (event, data, history) => {
+    console.log('signup bee')
     const user = { ...data }
     event.preventDefault();
     fetch('https://kurator-backend.herokuapp.com/users', {

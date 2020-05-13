@@ -24,7 +24,7 @@ class Register extends Component {
         return(
         <section className="auth-container">
             <h1 className="primary-txt">Create an Account</h1>
-            <form className="form auth-form" onSubmit={event => this.props.handleLogin(event, this.state, this.props.history)}>
+            <form className="form auth-form" onSubmit={event => this.props.handleSignup(event, this.state, this.props.history)}>
                 <div className="form-input form-element">
                     <input 
                         className="form-element-field" 
@@ -65,9 +65,6 @@ class Register extends Component {
             </form>
             <p className="my-1 primary-txt">Already have an account? <Link to='/login'>Login</Link></p>
         </section>
-
-
-
         //     <form onSubmit={event => this.props.handleSignup(event, this.state, this.props.history)}>
         //     <h4>SIGN UP</h4>
         //     <input
