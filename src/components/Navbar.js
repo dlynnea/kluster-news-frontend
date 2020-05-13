@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Redirect, withRouter } from 'react-router';
+import { withRouter } from 'react-router';
 
 const Nav = (props) => {
 
@@ -36,6 +36,5 @@ export default withRouter(Nav);
 
 Nav.propTypes = {
     logged_in: PropTypes.bool.isRequired,
-    displayForm: PropTypes.func.isRequired,
     handleLogout: PropTypes.func.isRequired
 }

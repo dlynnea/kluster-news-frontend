@@ -17,7 +17,7 @@ class Mbg extends Component {
 
     render() {
         const { mbgArticles } = this.state;
-        const { article, handleArticleUpdate } = this.props;
+        const { handleArticleUpdate } = this.props;
 
         return (
             <div>

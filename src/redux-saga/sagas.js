@@ -1,6 +1,6 @@
 import { takeLatest, call, put, all, fork } from "redux-saga/effects";
 import axios from "axios";
-import { UPDATE_QUERY, UPDATE_SOURCE, apiCallSuccess, apiCallFailure, apiSourceCallSuccess, apiUnCallSuccess, apiUnCallFailure } from './actions';
+import { UPDATE_QUERY, UPDATE_SOURCE, apiCallSuccess, apiCallFailure, apiSourceCallSuccess } from './actions';
 
 const API_KEY = '34c503b70d6e4e9983f9dc86cc7781f1';
 

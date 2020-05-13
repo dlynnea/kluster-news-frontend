@@ -73,7 +73,7 @@ class Pagination extends Component {
                     <li key={index}>
                       <a href="#"
                         onClick={e => this.changePage(page)}
-                        className={ this.props.current == page ? 'current' : '' }
+                        className={ this.props.current === page ? 'current' : '' }
                       >{ page }</a>
                     </li>
                   );

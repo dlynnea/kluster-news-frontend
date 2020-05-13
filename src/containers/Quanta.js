@@ -21,7 +21,7 @@ class Quanta extends Component {
 
     render() {
         const { articles } = this.state;
-        const { article, handleArticleUpdate } = this.props;
+        const { handleArticleUpdate } = this.props;
 
         return (  
             <div>

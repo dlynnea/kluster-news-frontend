@@ -9,7 +9,7 @@ const PicListItem = ({ photo }) => {
         <div className="card-footer media">
           <img src={photo.user.profile_image.small} alt="" className="media-obj" />
           <div className="media-body">
-            <a href={photo.user.portfolio_url} target="_blank">{ photo.user.name }</a>
+            <a href={photo.user.portfolio_url} target="_blank" rel="noopener noreferrer">{ photo.user.name }</a>
           </div>
         </div>
       </div>

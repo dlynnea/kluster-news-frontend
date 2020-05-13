@@ -8,6 +8,7 @@ const VergeCard = (props) => {
             <a 
             href={url} 
             target='_blank' 
+            rel="noopener noreferrer"
             className='newsLink'>
                 {title}
                 <br />
