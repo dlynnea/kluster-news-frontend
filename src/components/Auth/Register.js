@@ -33,6 +33,7 @@ class Register extends Component {
                         value={this.state.name}
                         onChange={this.handleChange}
                         name="name"
+                        required
                     />
                     <div className="form-element-bar"></div>
                 <label className="form-element-label">Name</label>
@@ -45,6 +46,7 @@ class Register extends Component {
                         value={this.state.username}
                         onChange={this.handleChange}
                         name="username"
+                        required
                     />
                     <div className="form-element-bar"></div>
                 <label className="form-element-label">Username</label>
@@ -57,6 +59,7 @@ class Register extends Component {
                         name="password"
                         value={this.state.password}
                         onChange={this.handleChange}
+                        required
                     />
                     <div className="form-element-bar"></div>
                 <label className="form-element-label">Password</label>
