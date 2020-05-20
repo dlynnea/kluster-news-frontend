@@ -123,13 +123,13 @@
         }
 
         .date {
-            margin: 14px 2px 20px 10px;
+            margin: 14px 2px 18px 10px;
         }
 
     }
 
     .container .secondColumn {
-
+        padding: 16px 10px 20px 30px;
 
         .auth-container {
             align-items: flex-start;
@@ -137,8 +137,15 @@
             padding: 0;
         }
 
-        .inputField {
-            font-size: 20px;
+        .newsLink {
+            font-size: 0.8rem;
+        }
+
+        input.inputField {
+            font-size: 14px;
+            height: 29px;
+            margin-top: 0;
+            margin-bottom: 18px;
         }
     }
 
