@@ -103,25 +103,76 @@
         padding: 0;
         margin: 0;
         font-size: 10px;
+        width: 110px;
 
         p {
             max-width: 90px;
             margin: 2px;
         }
 
-        a {
-            font-size: 14px;
+        h3 {
+            font-size: 18px;
+            padding: 5px 10px;
+            margin: 0;
         }
+
+        a {
+            font-size: 12px;
+            margin: 0;
+            padding: 12px 12px;
+        }
+
+        .date {
+            margin: 14px 2px 18px 10px;
+        }
+
 
     }
 
     .container .secondColumn {
-
+        padding: 16px 10px 20px 30px;
 
         .auth-container {
             align-items: flex-start;
             margin: 0;
             padding: 0;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .newsLink {
+            font-size: 0.8rem;
+        }
+
+        .inputField {
+            font-size: 14px;
+            height: 29px;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        .pagination {
+            margin: 0;
+
+            a {
+                font-size: 12px;
+                height: 38px;
+                margin: 4px;
+            }
+
+            .pag-left, .pag-mid, .pag-right {
+                padding: 6px 0;
+
+                ul {
+    
+                    li {
+                        // font-size: 2px;
+                        // size: 2px;
+                    }
+                }
+            }
         }
     }
 
