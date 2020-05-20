@@ -103,14 +103,27 @@
         padding: 0;
         margin: 0;
         font-size: 10px;
+        width: 110px;
 
         p {
             max-width: 90px;
             margin: 2px;
         }
 
+        h3 {
+            font-size: 18px;
+            padding: 5px 10px;
+            margin: 0;
+        }
+
         a {
-            font-size: 14px;
+            font-size: 12px;
+            margin: 0;
+            padding: 12px 12px;
+        }
+
+        .date {
+            margin: 14px 2px 20px 10px;
         }
 
     }
@@ -122,6 +135,10 @@
             align-items: flex-start;
             margin: 0;
             padding: 0;
+        }
+
+        .inputField {
+            font-size: 20px;
         }
     }
 
