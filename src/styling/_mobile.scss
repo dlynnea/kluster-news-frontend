@@ -142,6 +142,10 @@
                 width: 180px;
                 margin-top: 20px;
             }
+            p {
+                padding: 0;
+                font-size: 13px;
+            }
         }
 
         form {
@@ -154,10 +158,7 @@
             // box-shadow: 3px 3px 14px 1px grey;
             box-shadow: none;
             border-radius: 2px;
-        
-            p {
-                padding: 0;
-            }
+    
         
             input {
                 // width: 100%;
