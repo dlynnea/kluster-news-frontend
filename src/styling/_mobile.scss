@@ -130,13 +130,55 @@
         padding: 16px 10px 20px 30px;
 
         .auth-container {
-            align-items: flex-start;
-            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+            max-width: 240px;
+            margin-top: -10px;
+            // padding: 0 2rem;
+            
+            .form input[type='submit'] {
+                width: 160px;
+                margin-top: 20px;
+            }
+        }
+
+        form {
+            // background-color: none;
+            // background: none;
             padding: 0;
+            width: 100%;
+            height: 44vh;
+            border: 1px solid $ship-officer;
+            // box-shadow: 3px 3px 14px 1px grey;
+            box-shadow: none;
+            border-radius: 2px;
+        
+            p {
+                padding: 0;
+            }
+        
+            input {
+                // width: 100%;
+                // padding: 10px 6px;
+                // border-radius: 4px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        .auth-form .form-input {
+            margin: 0.8rem 0;
+            width: 160px;
         }
 
         h3 {
             font-size: 1rem;
+        }
+
+        h1 {
+            font-size: 1.2rem;
         }
 
         p {
