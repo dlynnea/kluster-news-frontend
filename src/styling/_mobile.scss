@@ -130,9 +130,50 @@
         padding: 16px 10px 20px 30px;
 
         .auth-container {
-            align-items: flex-start;
-            margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+            max-width: 100px;
+            margin: auto;
+            // padding: 0 2rem;
+            
+            .form input[type='submit'] {
+                width: 130px;
+                margin-top: 20px;
+            }
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: none;
+            // margin: 20px;
+            // padding: 40px 180px;
+            width: 10%;
+            height: 40vh;
+            // border: 1px solid $ship-officer;
+            box-shadow: 3px 3px 14px 1px grey;
+            border-radius: 2px;
+        
+            p {
+                padding: 0;
+            }
+        
+            input {
+                // width: 100%;
+                // padding: 10px 6px;
+                // border-radius: 4px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        .auth-form .form-input {
+            margin: 0.8rem 0;
+            width: 130px;
         }
 
         h3 {
